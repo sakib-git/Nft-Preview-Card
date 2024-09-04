@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan-light: hsl(178, 100%, 50%, 45%);
+    
+    --Very-dark-blue-bg: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-bleu-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background: var(--Very-dark-blue-bg);
+}
+body{
+    font-family: "Outfit", sans-serif;
+}
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 450px;
+    width: 270px;
+    background: var(--Very-dark-blue-card);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.first {
+    background: url(images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 52%;
+    border-radius: 8px;
+
+    &:hover .image{
+        display: block;
+        border-radius: 8px;
+    }
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background: var(--Cyan-light);
+    display: none;
+    cursor: pointer;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.top-middle {
+    width: 25px;
+    height: 25px;
+}
+
+.top-middle:hover {
+    padding: 52%;
+    background:#17cfd535;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin: 12px 0;
+    color: white;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #17ced5;
+}
+
+.font-size {
+    font-size: .85rem;
+    color: rgba(255, 255, 255, 0.539);
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    display: flex;
+    gap: 7px;
+    color: var(--Cyan);
+}
+
+.two {
+    display: flex;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.539);
+}
+
+.dag {
+    border-top: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.539);
+}
+
+span{
+    cursor: pointer;
+}
+
+span:hover {
+    color: #17ced5;
+
+}
+
+
+@media (max-width:520px) {
+
+    main{
+        height: 75%;
+    }
+
+}
